@@ -71,7 +71,7 @@ export default class MovieList extends Component {
                     <ul className="list-group-item">
                         {Movies &&
                             Movies.map((Movie, index) => (
-                                <li className={"list-group-item list-group-item-dark" + (index === currentIndex ? "" : "active")} onClick={() => this.setActiveMovie(Movie, index)} key={index}>
+                                <li className={"list-group-item list-group-item-info" + (index === currentIndex ? "" : "active")} onClick={() => this.setActiveMovie(Movie, index)} key={index}>
                                     <div className="d-flex justify-content-between">
                                         {Movie.title}
                                         <div>
